@@ -2,7 +2,6 @@
 	<!--
 	################### Daconi MODE_adriatic_turquoise32_SIF JackaL_All Models ####################
 
-
                                         ░░░░░░░░░▒░░                                               
                                      ░░░░░░░░░░░░░░░░░▒                                            
                                     ▒░   ▒▒  ░     ░  ░█▒▒░░                                       
@@ -46,10 +45,10 @@
            ▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▒▒░▒▒░░▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓██            
 
    
-                      ░█████▓     ▓█░    ▒█████   ▓██████  █▓▓▓▓█  ██
-                      ▒█    ██   ██░█▒   ██       █▒    █  ██▒▓▒█  ██
-                      ▒█   ░██  ██▓▓██▒  ██       ▓▓    █  ▒ █░░█  ██
-                       ██▓▒▒▓   ▓    ▒▒  ▒▒▓██▓   ▒▒▒▒▒█▓  █  █▓█  █▓
+                       █████▓     ▓█░    ▒█████  ▓██████  █▓   █  ██
+                       █    ██   ██ █▒   ██      █▒    █  ██▒  █  ██
+                       █   ░██  ██▓▓██▒  ██      ▓▓    █  █ █░ █  ██
+                       ██▓▒▒▓   ▓    █▒  ▒▒▓██▓  ▒▒▒▒▒█▓  █  █▓█  █▓
 
 
 	QUESTA SKIN è protetta da copyright ed è utilizzabile solo per i firmware SIF TEAM !!!
@@ -1147,7 +1146,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<ePixmap position="57,625" zPosition="1" size="750,38" pixmap="adriatic_turquoise32/menu/colorbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="775,123" zPosition="2" size="27,420" pixmap="adriatic_turquoise32/icons/barra420.png" alphatest="blend" transparent="1" />
 		<!-- Lista Registrazioni -->
-		<widget name="waitingtext" position="96,147" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1" />
+		<widget name="waitingtext" position="97,140" size="650,380" zPosition="4" font="Regular;22" halign="right" valign="center" transparent="1" />
 		<widget name="list" zPosition="1" position="80,136" size="720,399" scrollbarMode="showOnDemand"  foregroundColor="white" transparent="1" />
 		<!-- Informazioni Ora corrente-Spazio Disco -->	
 		<ePixmap pixmap="adriatic_turquoise32/icons/clock.png" position="80,557" size="14,14" zPosition="1" alphatest="blend"/>
@@ -1171,7 +1170,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget source="Service" render="Label" position="49,79" zPosition="5" size="370,24" font="Regular;20" halign="center" foregroundColor="#4ccbde" transparent="1"> 
+		<widget source="Service" render="Label" position="134,77" zPosition="5" size="370,24" font="Regular;20" halign="center" foregroundColor="#4ccbde" transparent="1"> 
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
 		<widget source="Service" render="Label" position="845,390" zPosition="4" size="370,200" font="Regular;18" halign="center" foregroundColor="grey" backgroundColor="#333333" transparent="1">
@@ -3901,6 +3900,198 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap pixmap="adriatic_turquoise32/skin_default/icons/ico_restart.png" position="340,100" size="600,300" alphatest="on" />
                 <widget name="text" position="center,c+5" size="720,100" font="Regular;22" halign="center" />
         </screen>
+
+        <!-- ############ CROSSEPG ############ -->
+
+
+  	<!-- CrossEPG Configuration -->
+
+	<screen name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Configuration" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+        <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="PigTemplate" />
+		<ePixmap pixmap="adriatic_turquoise32/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
+		<widget name="config" position="65,150" size="725,250" scrollbarMode="showOnDemand" zPosition="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" />
+		<widget name="information" position="840,350" size="370,300" halign="center" valign="center" font="Regular;22" backgroundColor="#333333" transparent="1" />
+		<widget name="key_red" position="78,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+	</screen>
+
+	<!-- Menu -->
+	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+                <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="PigTemplate" />
+		<panel name="ScrollBarTemplate450" />
+                <ePixmap position="772,110" zPosition="4" size="29,468" pixmap="adriatic_turquoise32/icons/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="772,577" zPosition="4" size="29,40" pixmap="adriatic_turquoise32/icons/endbar.png" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="adriatic_turquoise32/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
+                <widget name="key_red" position="77,614" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="un9f1313" transparent="1" />
+                <ePixmap position="860,414" size="370,204" zPosition="1" pixmap="adriatic_turquoise32/menu/ico_crossepg.png" alphatest="on" />
+		<widget source="list" render="Listbox" position="66,137" size="730,440" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x36.png" backgroundColor="#333333" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (20, 5), size = (32, 32), png = 0),
+					MultiContentEntryText(pos = (60, 5), size = (440, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 40
+				}
+			</convert>
+		</widget>	
+		<eLabel text="Exit" position="122,620" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
+	</screen>
+
+	<!-- Providers -->
+	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" backgroundColor="transparent" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+                <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+		<panel name="GenericLayoutTemplate" />
+		<panel name="ScrollBarTemplate450" />
+		<panel name="PigTemplate" />
+		<panel name="3Buttons" />
+                <ePixmap position="772,110" zPosition="4" size="29,468" pixmap="adriatic_turquoise32/icons/maxbar.png" alphatest="blend" transparent="1" />
+		<ePixmap position="772,577" zPosition="4" size="29,40" pixmap="adriatic_turquoise32/icons/endbar.png" alphatest="blend" transparent="1" />
+		<ePixmap pixmap="adriatic_turquoise32/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
+		<widget source="list" render="Listbox" position="66,135" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="black" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
+					],
+					"fonts": [gFont("Regular", 20)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<!-- Order List -->
+	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+                <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget> 
+		<panel name="GenericLayoutTemplate" />
+		<panel name="ScrollBarTemplate450" />
+		<panel name="PigTemplate" />
+		<panel name="3Buttons" />
+		<ePixmap pixmap="adriatic_turquoise32/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
+		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (18, 0), size = (700, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (640, 0), size = (40, 40), png = 1),
+					],
+					"fonts": [gFont("Regular", 20)],
+					"itemHeight": 30
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<!-- Information -->
+	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="transparent" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+                <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="PigTemplate" />
+		<ePixmap pixmap="adriatic_turquoise32/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
+		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="adriatic_turquoise32/menu/ico_crossepg.png" alphatest="on" />
+		<widget name="version"            position="94,120" size="720,28" font="Regular;26" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1" />
+		<ePixmap position="70,150" zPosition="2" size="720,4" pixmap="adriatic_turquoise32/menu/line.png" />
+		<widget name="create"             position="70,180" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<widget name="last_update"        position="70,210" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<ePixmap position="70,240" zPosition="2" size="720,4" pixmap="adriatic_turquoise32/menu/line.png" />
+		<widget name="headersdb_size"     position="70,270" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<widget name="descriptorsdb_size" position="70,300" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<ePixmap position="70,330" zPosition="2" size="720,4" pixmap="adriatic_turquoise32/menu/line.png" />
+		<widget name="indexesdb_size"     position="70,360" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<widget name="aliasesdb_size"     position="70,390" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<widget name="total_size"         position="70,420" size="720,25" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<ePixmap position="70,450" zPosition="2" size="720,4" pixmap="adriatic_turquoise32/menu/line.png" />
+		<widget name="channels_count"     position="70,480" size="720,25" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" />
+		<widget name="events_count"       position="70,510" size="720,25" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" />
+		<widget name="hashes_count"       position="70,540" size="720,25" font="Regular;20" foregroundColor="#4ccbde" backgroundColor="black" transparent="1" />
+		<widget name="key_red" position="78,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+	</screen>
+
+	<!-- About -->
+	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="transparent" flags="wfNoBorder" >
+                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+                <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget> 
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="PigTemplate" />
+		<ePixmap pixmap="adriatic_turquoise32/buttons/red.png" position="78,615" size="140,40" alphatest="on" />
+		<ePixmap position="860,414" size="370,204" zPosition="1" pixmap="adriatic_turquoise32/menu/ico_crossepg.png" alphatest="on" />
+		<widget name="about" position="83,127" size="700,460" font="Regular;20" backgroundColor="#333333" transparent="1" />
+		<widget name="key_red" position="78,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+	</screen>
 
 	<!-- SIFTeam Screens -->
 
