@@ -3907,7 +3907,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
   	<!-- CrossEPG Configuration -->
 
 	<screen name="CrossEPG_Setup" position="0,0" size="1280,720" title="CrossEPG Configuration" flags="wfNoBorder" >
-                <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                 <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                  <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                  <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
@@ -3931,6 +3932,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Menu -->
 	<screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder" >
                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
@@ -3968,6 +3970,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Providers -->
 	<screen name="CrossEPG_Providers" position="0,0" size="1280,720" title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" backgroundColor="transparent" flags="wfNoBorder" >
                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
@@ -4003,6 +4006,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Order List -->
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="transparent" flags="wfNoBorder" >
                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
@@ -4036,6 +4040,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- Information -->
 	<screen name="CrossEPG_Info" position="0,0" size="1280,720" title="CrossEPG - DB Info" backgroundColor="transparent" flags="wfNoBorder" >
                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
@@ -4073,6 +4078,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<!-- About -->
 	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="transparent" flags="wfNoBorder" >
                 <ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+                <ePixmap position="0,0" zPosition="-1" size="421,69" pixmap="adriatic_turquoise32/menu/tx_crossepg.png"  />
                 <widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
                 <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
                 <convert type="EventTime">Progress</convert>
