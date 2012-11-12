@@ -3186,7 +3186,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- Sezione Numero di TUNER - Numero di TUNER A B C D -->
-    <eLabel text="TUNER" zPosition="4" position="1134,540" size="60,20" halign="left" font="LCD;20" foregroundColor="foreground" transparent="1" backgroundColor="#333333" />
+    <eLabel text="TUNER" zPosition="4" position="1134,540" size="60,20" halign="left" font="LCD;20" foregroundColor="foreground" transparent="1" backgroundColor="#11404040" />
 		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1190,540" zPosition="3" size="15,20" font="LCD2;20" halign="left" foregroundColor="#4ccbde" backgroundColor="#333333" transparent="1">
   			<convert type="FrontendInfo">NUMBER</convert>
   			<convert type="ValueRange">0,0</convert>
@@ -3224,7 +3224,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget> 	
 	-->
     <!-- Nome Provider - Provider Name -->
-    <widget source="session.CurrentService" render="Label" position="69,534" size="159,22" zPosition="2" font="Regular;16" backgroundColor="#333333" halign="center" foregroundColor="#dcdcdc" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="69,534" size="159,22" zPosition="2" font="Regular;16" backgroundColor="#11404040" halign="center" foregroundColor="#dcdcdc" transparent="1">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <!-- Risoluzione Video - Video Resolution -->
@@ -3290,7 +3290,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="280,656" 
 		size="60,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3305,7 +3305,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="335,656" 
 		size="60,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		font="Regular;15" 
 		halign="left" 
@@ -3320,7 +3320,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="391,656" 
 		size="18,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		font="Regular;15" 
 		halign="left" 
@@ -3335,7 +3335,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="413,656" 
 		size="65,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3350,7 +3350,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="470,656" 
 		size="37,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		font="Regular;15" 
 		halign="left" 
@@ -3365,7 +3365,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="506,656" 
 		size="60,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3385,125 +3385,125 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="InfoBar" />
 		<ePixmap position="-1,27" zPosition="0" size="1280,102" pixmap="adriatic_turquoise32//extrabar.png" transparent="1" />
 		<!-- emu icons-->
-		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">BetaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="BETA" render="Label" source="session.CurrentService" position="102,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">BetaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">IrdCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="IRDETO" render="Label" source="session.CurrentService" position="151,82"  size="63,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">IrdEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">SecaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="SECA" render="Label" source="session.CurrentService" position="217,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">SecaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">ViaCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="VIA" render="Label" source="session.CurrentService" position="268,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">ViaEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">NagraCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="NAGRA" render="Label" source="session.CurrentService" position="310,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">NagraEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">CrwCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="CRW" render="Label" source="session.CurrentService" position="374,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">CrwEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">NdsCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="NDS" render="Label" source="session.CurrentService" position="422,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">NdsEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#f23d21" shadowColor="black" transparent="1" zPosition="3">
+		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#f23d21" shadowColor="transparentblack" transparent="1" zPosition="3">
 			<convert type="ExtremeInfo">ConaxCrypt</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="CONAX" render="Label" source="session.CurrentService" position="470,82"  size="58,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">ConaxEcm</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="EMU" render="Label" source="session.CurrentService" position="534,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="EMU" render="Label" source="session.CurrentService" position="534,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="EMU" render="Label" source="session.CurrentService" position="534,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="EMU" render="Label" source="session.CurrentService" position="534,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">Emu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="CRD" render="Label" source="session.CurrentService" position="581,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="CRD" render="Label" source="session.CurrentService" position="581,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="CRD" render="Label" source="session.CurrentService" position="581,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="CRD" render="Label" source="session.CurrentService" position="581,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">Crd</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget text="NET" render="Label" source="session.CurrentService" position="631,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="foreground" shadowColor="black" transparent="1" zPosition="2" />
-		<widget text="NET" render="Label" source="session.CurrentService" position="631,82"  size="50,22" font="Regular;15" backgroundColor="transparent" foregroundColor="#56c856" shadowColor="black" transparent="1" zPosition="4">
+		<widget text="NET" render="Label" source="session.CurrentService" position="631,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="foreground" shadowColor="transparentblack" transparent="1" zPosition="2" />
+		<widget text="NET" render="Label" source="session.CurrentService" position="631,82"  size="50,22" font="Regular;15" backgroundColor="#11404040" foregroundColor="#56c856" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="ExtremeInfo">Net</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		
 		<!-- snr, agc, ber -->
-		<eLabel text="SNR:" position="970,87"  size="50,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" />
-		<widget source="session.FrontendStatus" render="Label" position="1006,87" size="60,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" zPosition="4">
+		<eLabel text="SNR:" position="970,87"  size="50,18" font="Regular;14" backgroundColor="#11404040" shadowColor="black" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="1006,87" size="60,18" font="Regular;14" backgroundColor="#11404040" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel text="AGC:" position="1050,87" size="50,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" />
-		<widget source="session.FrontendStatus" render="Label" position="1086,87" size="60,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" zPosition="4">
+		<widget source="session.FrontendStatus" render="Label" position="1086,87" size="60,18" font="Regular;14" backgroundColor="#11404040" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<eLabel text="BER:" position="1130,87" size="50,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" />
-		<widget source="session.FrontendStatus" render="Label" position="1165,87" size="60,18" font="Regular;14" backgroundColor="#333333" shadowColor="black" transparent="1" zPosition="4">
+		<widget source="session.FrontendStatus" render="Label" position="1165,87" size="60,18" font="Regular;14" backgroundColor="#11404040" shadowColor="transparentblack" transparent="1" zPosition="4">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		
 		<!-- emu info -->
-		<widget halign="left" backgroundColor="#333333" foregroundColor="#4ccbde" transparent="1" position="681,82" render="Label" size="386,22" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="681,82" render="Label" size="386,22" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">IDInfo</convert>
 		</widget>
-		<widget halign="left" backgroundColor="#333333" foregroundColor="#4ccbde" transparent="1" position="78,50" render="Label" size="208,26" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="78,50" render="Label" size="208,26" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">Protocol</convert>
 		</widget>
-		<widget halign="left" backgroundColor="#333333" foregroundColor="#dcdcdc" transparent="1" position="920,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="left" backgroundColor="#333333" shadowColor="transparentblack" foregroundColor="#dcdcdc" transparent="1" position="920,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">Hops</convert>
 		</widget>
-		<widget halign="left" backgroundColor="#333333" foregroundColor="#4ccbde" transparent="1" position="454,50" render="Label" size="512,26" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="left" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#4ccbde" transparent="1" position="454,50" render="Label" size="512,26" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">Address</convert>
 		</widget>
-		<widget halign="left"  backgroundColor="#333333" foregroundColor="#dcdcdc" transparent="1" position="1020,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="left"  backgroundColor="#333333" shadowColor="transparentblack" foregroundColor="#dcdcdc" transparent="1" position="1020,50" render="Label" size="200,26" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">Time</convert>
 		</widget>
-		<widget halign="center" backgroundColor="#333333" foregroundColor="#56c856" transparent="1" position="328,50" render="Label" size="112,26" font="Regular;17" source="session.CurrentService" zPosition="4">
+		<widget halign="center" backgroundColor="#11404040" shadowColor="transparentblack" foregroundColor="#56c856" transparent="1" position="328,50" render="Label" size="112,26" font="Regular;17" source="session.CurrentService" zPosition="4">
 			<convert type="EmuCamInfo">EMU</convert>
 		</widget>
 	
@@ -3519,7 +3519,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		position="710,656" 
 		size="30,50"  
 		font="Regular;14" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		halign="center" 
 		transparent="1" 
@@ -3531,7 +3531,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="740,656" 
 		size="50,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3547,7 +3547,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="30,50"  
 		font="Regular;14" 
 		halign="center" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		transparent="1" 
 		zPosition="3"
@@ -3557,7 +3557,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="820,656" 
 		size="50,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3573,7 +3573,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 		font="Regular;14" 
 		halign="center" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		transparent="1" 
 		zPosition="3"
@@ -3583,7 +3583,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="910,656" 
 		size="50,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
@@ -3599,7 +3599,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		size="40,50"  
 		font="Regular;14" 
 		halign="center" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="foreground" 
 		transparent="1" 
 		zPosition="3"
@@ -3609,7 +3609,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		render="Label" 
 		position="1000,656" 
 		size="50,50" 
-		backgroundColor="#333333" 
+		backgroundColor="#11404040" 
 		foregroundColor="#4ccbde" 
 		font="Regular;15" 
 		halign="left" 
