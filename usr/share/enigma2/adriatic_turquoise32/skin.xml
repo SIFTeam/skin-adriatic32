@@ -1347,7 +1347,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>	
-		<widget name="green" position="248,623" zPosition="2" size="165,32" font="Regular;18" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+		<widget name="green" position="244,612" zPosition="2" size="170,45" font="Regular;18" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
                 <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
@@ -3806,7 +3806,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 			<convert type="MenuEntryCompare">dmc_mainmenu</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise32/menu/ico_dvdplayer.png" position="860,414" size="370,204" alphatest="blend" transparent="1" >
+		<widget source="menu" render="Pixmap" pixmap="adriatic_turquoise32/menu/ico_dvdplayer.png" position="860,412" size="370,204" alphatest="blend" transparent="1" >
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
