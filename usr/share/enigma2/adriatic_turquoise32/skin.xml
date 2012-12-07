@@ -776,34 +776,34 @@
 		<widget name="Adaptertext" 		position="20,20" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" transparent="1" />			
 		<widget name="Adapter" 			position="20,50" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" />
 		<widget name="AdapterInfo_OK" 		position="720,35" size="38,31" zPosition="2" pixmap="adriatic_turquoise32/icons/rec-on.png" alphatest="on" />
-		<widget name="AdapterInfo" 		position="840,31" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png"  />
+		<widget name="AdapterInfo" 		position="840,31" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png"  />
 		<widget name="AdapterInfo_Text" 	position="840,27" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<eLabel 			    	position="20,90"  size="740,1" 	backgroundColor="black" />
 		<widget name="Networktext"		position="20,100" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" transparent="1" />		
 		<widget name="Network" 			position="20,130" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" />
 		<widget name="NetworkInfo_Check"	position="720,115" size="38,31"  zPosition="2" pixmaps="adriatic_turquoise32/icons/rec-on.png,adriatic_turquoise32/icons/rec-off.png" alphatest="on" />
-		<widget name="NetworkInfo" 		position="840,111" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png" />
+		<widget name="NetworkInfo" 		position="840,111" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png" />
 		<widget name="NetworkInfo_Text" 	position="840,107" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<eLabel 			    	position="20,170" size="740,1" 	backgroundColor="black" />
 		<widget name="Dhcptext" 		position="20,180" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" transparent="1" />			
 		<widget name="Dhcp" 			position="20,210" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" />
 		<widget name="DhcpInfo_Check" 		position="720,195" size="38,31"  zPosition="2" pixmaps="adriatic_turquoise32/icons/rec-on.png,adriatic_turquoise32/icons/rec-off.png" alphatest="on" />
-		<widget name="DhcpInfo" 		position="840,191" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png" />
+		<widget name="DhcpInfo" 		position="840,191" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png" />
 		<widget name="DhcpInfo_Text" 		position="840,187" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<eLabel 			    	position="20,250" size="740,1" 	backgroundColor="black" />
 		<widget name="IPtext" 			position="20,260" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" transparent="1" />			
 		<widget name="IP" 			position="20,290" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" />
 		<widget name="IPInfo_Check" 		position="720,275" size="38,31"  zPosition="2" pixmaps="adriatic_turquoise32/icons/rec-on.png,adriatic_turquoise32/icons/rec-off.png" alphatest="on" />
-		<widget name="IPInfo" 			position="840,271" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png" />
+		<widget name="IPInfo" 			position="840,271" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png" />
 		<widget name="IPInfo_Text" 		position="840,267" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<eLabel 			    	position="20,330" size="740,1" 	backgroundColor="black" />
 		<widget name="DNStext" 			position="20,340" size="650,25" zPosition="1" font="Regular;22" foregroundColor="grey" transparent="1" />		
 		<widget name="DNS" 			position="20,370" size="650,25" zPosition="1" font="Regular;22" foregroundColors="#8c8c93,#f23d21,#1cff1c" transparent="1" />
 		<widget name="DNSInfo_Check" 		position="720,355" size="38,31"  zPosition="2" pixmaps="adriatic_turquoise32/icons/rec-on.png,adriatic_turquoise32/icons/rec-off.png" alphatest="on" />
-		<widget name="DNSInfo" 			position="840,351" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png" />
+		<widget name="DNSInfo" 			position="840,351" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png" />
 		<widget name="DNSInfo_Text" 		position="840,347" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<eLabel 			    	position="20,410" size="740,1" 	backgroundColor="black" />
-		<widget name="EditSettingsButton" 	position="840,431" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45ok.png" />
+		<widget name="EditSettingsButton" 	position="840,431" size="318,50" zPosition="1" pixmaps="adriatic_turquoise32/icons/ls300x45.png,adriatic_turquoise32/icons/ls300x45.png" />
 		<widget name="EditSettings_Text" 	position="840,427" size="318,50" zPosition="2" font="Regular;22" halign="center" valign="center" transparent="1" foregroundColors="#ffffff,#ffffff,#ffffff"  />
 		<widget name="InfoText" 		position="20,22" size="740,476" zPosition="25" font="Regular;24" halign="center" valign="center" backgroundColor="#141413" />
 		<ePixmap position="103,500" size="250,40" pixmap="adriatic_turquoise32/buttons/green25.png" alphatest="on" zPosition="1" />
