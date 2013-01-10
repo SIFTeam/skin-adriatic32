@@ -3989,9 +3989,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 <ePixmap position="772,110" zPosition="4" size="29,468" pixmap="adriatic_turquoise32/icons/maxbar.png" alphatest="blend" transparent="1" />
 		<ePixmap position="772,577" zPosition="4" size="29,40" pixmap="adriatic_turquoise32/icons/endbar.png" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="adriatic_turquoise32/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
-                <ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise32/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
+                <ePixmap position="57,625" zPosition="1" size="750,38" pixmap="adriatic_turquoise32/menu/colorbar.png" alphatest="blend" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
                 <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
+                <eLabel text="Download" position="482,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="list" render="Listbox" position="66,135" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="black" transparent="1" >
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -4026,6 +4027,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<panel name="PigTemplate" />
 		<panel name="3Buttons" />
 		<ePixmap pixmap="adriatic_turquoise32/menu/ico_receiv.png" position="840,370" size="380,256" zPosition="3" alphatest="on" />
+                <ePixmap position="56,625" zPosition="1" size="350,38" pixmap="adriatic_turquoise32/menu/colorbar_pl.png" alphatest="blend" transparent="1" />
                 <eLabel text="Exit" position="112,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1"/>
                 <eLabel text="Save" position="302,625" size="300,40" font="Regular;22" halign="left" zPosition="3" backgroundColor="darkgrey" transparent="1" />
 		<widget source="list" render="Listbox" position="60,145" size="730,450" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" >
