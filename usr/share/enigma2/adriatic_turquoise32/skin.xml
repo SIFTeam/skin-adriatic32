@@ -3897,7 +3897,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
         <!-- restart icons -->
         <screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-        <ePixmap pixmap="adriatic_turquoise32/skin_default/icons/ico_restart.png" position="340,100" size="600,300" alphatest="on" />
+        <ePixmap pixmap="adriatic_turquoise32/skin_default/icons/ico_restart.png" position="376,165" size="600,300" alphatest="on" />
                 <widget name="text" position="center,c+5" size="720,100" font="Regular;22" halign="center" />
         </screen>
 
