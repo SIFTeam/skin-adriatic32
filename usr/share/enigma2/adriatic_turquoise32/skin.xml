@@ -2832,8 +2832,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
                 </widget>
 	</screen>
 	<!-- (150) ####### MyTubeSuggestionsListScreen ####### -->
-	<screen name="MyTubeSuggestionsListScreen" title="MyTube ListScreen" position="540,90" size="660,500" zPosition="2"  flags="wfNoBorder" >
-		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="adriatic_turquoise32/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent" />
+	<screen name="MyTubeSuggestionsListScreen" title="MyTube ListScreen" position="64,146" size="712,400" zPosition="2"  flags="wfNoBorder" >
+		<ePixmap position="0,0" zPosition="-2" size="712,400" pixmap="adriatic_turquoise32/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent" />
 		<widget source="suggestionslist" render="Listbox" position="10,10" zPosition="6" size="640,290" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -2847,8 +2847,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		</widget>
 	</screen>
 	<!-- (151) ####### MyTubeHistoryScreen ####### -->
-	<screen name="MyTubeHistoryScreen" title="MyTube History" position="540,90" size="660,500" zPosition="6" flags="wfNoBorder" >
-		<ePixmap position="0,0" zPosition="-2" size="660,500" pixmap="adriatic_turquoise32/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
+	<screen name="MyTubeHistoryScreen" title="MyTube History" position="64,146" size="712,400" zPosition="6" flags="wfNoBorder" >
+		<ePixmap position="0,0" zPosition="-2" size="712,400" pixmap="adriatic_turquoise32/menu/bx_youtube.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
 		<widget source="historylist" render="Listbox" position="10,10" zPosition="7" size="640,377" scrollbarMode="showOnDemand"  transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
