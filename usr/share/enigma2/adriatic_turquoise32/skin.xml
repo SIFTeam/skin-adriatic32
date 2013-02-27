@@ -1559,6 +1559,8 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 
 
+
+
 		<widget name="scan_state" position="20,105" size="560,25" zPosition="2" font="Regular;22" />
 		<widget name="pass" position="20,105" size="560,25" font="Regular;22" />
 		<widget name="scan_progress" position="20,140" size="560,20" pixmap="adriatic_turquoise32/progress_big.png" borderWidth="1" borderColor="#cccccc" />
@@ -1723,6 +1725,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 	<screen name="TimerSelection" position="0,0" size="1280,720" title="Timer selection" backgroundColor="black" flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-3" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_help.png" />
 		<ePixmap position="0,0" zPosition="1" size="570,69" pixmap="adriatic_turquoise32/menu/tx_timer.png" />
+                <ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise32/menu/ico_timer.png" alphatest="blend" transparent="1"/>
 		<widget name="timerlist" position="79,141" size="1120,350" scrollbarMode="showOnDemand" transparent="1" />
 	</screen>
 	<!-- (083) ####### Video Finetune ####### -->
@@ -1743,9 +1746,10 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
+                <ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise32/menu/ico_timer.png" alphatest="blend" transparent="1"/>
 
 		<ePixmap position="0,0" zPosition="1" size="570,69" pixmap="adriatic_turquoise32/menu/tx_timer.png" />
-		<widget name="config" position="69,137" size="728,427" scrollbarMode="showAlways" selectionPixmap="adriatic_turquoise32/icons/ls330x26.png" transparent="1" />
+		<widget name="config" position="69,137" size="728,427" scrollbarMode="showAlways" selectionPixmap="adriatic_turquoise32/icons/ls750x24.png" transparent="1" />
                 <!-- digital clock -->
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
@@ -1769,6 +1773,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="darkgrey" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
+                <ePixmap position="860,414" zPosition="1" size="370,204" pixmap="adriatic_turquoise32/menu/ico_timer.png" alphatest="blend" transparent="1"/>
 		
 		<ePixmap position="0,0" zPosition="1" size="570,69" pixmap="adriatic_turquoise32/menu/tx_timer.png" />
 		<widget name="timerlist" position="69,137" size="728,427" zPosition="2" scrollbarMode="showAlways" selectionPixmap="adriatic_turquoise32/icons/ls970x66.png" transparent="1"/>
@@ -3111,6 +3116,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 		<widget source="key_red" render="Label" position="15,625" size="220,35" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget source="key_green" render="Label" position="215,625" size="220,35" zPosition="2" font="Regular;22" halign="center" valign="center" backgroundColor="transpBlack" transparent="1"/>
                 <!-- digital clock -->
+
 		<widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
                 <convert type="ClockToText">Format:%H:%M :%S</convert>
                 </widget>
