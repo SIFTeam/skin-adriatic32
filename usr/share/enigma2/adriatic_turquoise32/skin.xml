@@ -1561,6 +1561,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 
 
+
 		<widget name="scan_state" position="20,105" size="560,25" zPosition="2" font="Regular;22" />
 		<widget name="pass" position="20,105" size="560,25" font="Regular;22" />
 		<widget name="scan_progress" position="20,140" size="560,20" pixmap="adriatic_turquoise32/progress_big.png" borderWidth="1" borderColor="#cccccc" />
@@ -3913,6 +3914,36 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
         <ePixmap pixmap="adriatic_turquoise32/skin_default/icons/ico_restart.png" position="376,165" size="600,300" alphatest="on" />
                 <widget name="text" position="center,c+5" size="720,100" font="Regular;22" halign="center" />
         </screen>
+
+        <!-- ############ OpenAirPlay ############ -->
+
+	<screen name="OpenAirPlayConfig" position="0,0" size="1280,720" title="SIFTeam OpenAirPlay Configuration" flags="wfNoBorder" >
+		<ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="adriatic_turquoise32/menu/fr_main_channels.png" />
+		<widget source="session.VideoPicture" render="Pig" position=" 838,112" size="382,218" zPosition="3" backgroundColor="#df0b1300"/>
+                <widget source="session.Event_Now" render="Progress" pixmap="adriatic_turquoise32/tv_b_bar.png" size="340,2" position="837,338" zPosition="5"  backgroundColor="transpBlack" transparent="1">
+                <convert type="EventTime">Progress</convert>
+                </widget>
+        <!-- service name -->
+                <widget source="session.CurrentService" render="Label" position="832,350" size="393,31" zPosition="2" font="Regular;24" halign="center" noWrap="1" transparent="1" foregroundColor="#4ccbde" backgroundColor="#333333">
+                <convert type="ServiceName">Name</convert>
+                </widget>
+        <!-- digital clock -->
+                <widget source="global.CurrentTime" render="Label" position="949,58" size="160,37" zPosition="2" font="LCD;38" valign="top" halign="center" foregroundColor="#4ccbde" backgroundColor="transpBlack" transparent="1">
+                <convert type="ClockToText">Format:%H:%M :%S</convert>
+                </widget>
+		<panel name="GenericLayoutFullTemplate" />
+		<panel name="PigTemplate" />
+		<widget name="config" position="67,203" size="725,250" scrollbarMode="showOnDemand" zPosition="1" selectionPixmap="adriatic_turquoise32/icons/ls_720x24.png" backgroundColor="#333333" transparent="1" />
+		<widget source="Title" render="Label" zPosition="2" position="180,45" size="800,40" halign="left" font="Regular; 26" foregroundColor="#4ccbde" transparent="1" shadowColor="black" shadowOffset="-2,-2" backgroundColor="black" />
+                <ePixmap position="933,416" zPosition="1" size="370,204" pixmap="adriatic_turquoise32/menu/ico_openair.png" alphatest="blend" transparent="1" />
+		<ePixmap position="180,80" zPosition="3" size="655,1" pixmap="adriatic_turquoise32/icons/s-title.png" alphatest="blend"  />
+		<widget name="config" position="105,149" size="650,350" selectionPixmap="adriatic_turquoise32/icons/ls_750x24.png" transparent="1" />
+		<ePixmap position="57,625" zPosition="1" size="750,45" pixmap="adriatic_turquoise32/menu/colorbar.png" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="78,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+	        <widget name="key_green" position="264,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+	        <widget name="key_yellow" position="452,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+	        <widget name="key_blue" position="638,615" zPosition="1" size="140,40" font="Regular;24" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
+	</screen>
 
         <!-- ############ CROSSEPG ############ -->
 
